@@ -31,21 +31,19 @@
    
 }
 
-#content {
+.content {
     background-color: #3C4043;
-    width: 100%;
-   
+    display: flex;
+    padding: 15px;
+    
 }
 
-#aboutMe {
-    width: 47%;
-    height: 600 px;
-    float: left;
-    
-    
-    background-color: #3C4043;
-    
-    padding-left: 20px;
+.aboutMe {
+ width: 50%;
+}
+
+.heroImg {
+ width: 50%;
 }
 
 .h1 {
@@ -54,17 +52,31 @@
     color: aliceblue;
 }
 
+h2 {
+    font-family: open Sans;
+    font-size: 2rem;
+    color: #3C4043 ;
+    text-align: center;
+}
+
+h3 {
+    font-family: open Sans;
+    font-size: 1.2rem;
+    color: #3C4043 ;
+}
+
+p {
+    font-family: open Sans;
+    font-size: 1rem;
+    color: #3C4043 ;
+}
 .p {
     font-family: Open Sans;
     color: aliceblue;
     font-size:1.5rem ;
 }
-#hroImg{
-    width: 50%;
-    height: 600 px;
-    float: right;
-   
-}
+
+
 .footer{
     background-color:#3C4043;
     font-family: "Open Sans" ;
@@ -82,4 +94,84 @@ button {
    font-family: Open Sans;
    color: white;
    border: 0px;
+}
+/*<!--  My UX Skills section coded using CSS flex -->*/
+#mySkill{
+    background-color: aliceblue;
+    padding: 15px;
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    background-color: aliceblue;
+    padding: 15px;
+    justify-content: space-between;
+    height: 300px;
+    
+}
+
+.flexChild {
+    flex-basis: 24%;
+    margin: 10px;  
+}
+
+/*<!--  My Work section coded using CSS flex -->*/
+
+#myWork{
+    background-color: rgb(250, 234, 249);
+    padding: 15px;
+    
+}
+
+.workGrid {
+
+    display:grid;
+    padding: 15px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "myAreaL myArea" "myAreaL myArea" "myAreaL myArea";
+    align-items: center;
+    row-gap: 1em;
+}
+
+.gridIMG {
+    width: 90%;
+ }
+
+
+@media only screen and (max-width:600px) {
+
+    p {
+        font-family: open Sans;
+        font-size: 0.8rem;
+        color: #3C4043 ;
+    }
+
+  
+   
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 15px;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .workGrid {
+
+        display:grid;
+        padding: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: "myAreaL" "myArea" "myAreaL" "myArea" "myAreaL" "myArea" ;
+        
+        row-gap: 1em;
+        height: 100%;
+    }
+     .gridIMG {
+        width: 10%;
+     }
 }
