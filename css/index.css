@@ -1,8 +1,13 @@
+body{
+    margin: 100px;
+}
 .inline-block {
+
     display: inline-block;
     vertical-align: top;
     color: aliceblue;
     padding: 15px 20px;
+
 }
 #navigation {
     width: 100%;
