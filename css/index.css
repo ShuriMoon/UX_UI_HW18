@@ -40,9 +40,9 @@
     width: 100%; 
 }
 
-#aboutMe {
+.aboutMe {
  
-    width: 47%;
+    width: 46%;
     height: 600 px;
     float: left;
     background-color: #3C4043;
@@ -51,7 +51,7 @@
     
 }
 
-#hroImg {
+.hroImg {
     width: 50%;
     height: 600 px;
     float: right;
