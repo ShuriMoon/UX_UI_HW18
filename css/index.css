@@ -90,7 +90,18 @@ p {
     line-height:1.5em;
 }
 
-
+.headingSkill {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+.headingWork {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    background-color: rgb(250, 234, 249);
+}
 .footer{
     background-color:#3C4043;
     text-align: center;
@@ -108,7 +119,17 @@ button {
    border: 0px;
 }
 /*<!--  My UX Skills section coded using CSS flex -->*/
-#mySkill {
+.flexContainer {
+    background-color: aliceblue;
+    display: flex;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+  }
+/* #mySkill { 
     background-color: aliceblue;
     width: 100%;
     padding: 2em 4em;
@@ -149,7 +170,7 @@ button {
 }
 #code-icon {
     background-image: url('/images/CODE_icon.png');
-}
+}*/
 
 /*<!--  My Work section coded using CSS flex -->*/
 
@@ -196,6 +217,10 @@ button {
         flex-direction: column;
     }
     
+    .flexContainer div {
+        width: 100%;
+        padding: 25px;
+      }
     .workGrid {
         display:block;
         width: 90%;
