@@ -43,25 +43,19 @@
 
 #content {
     background-color: #3C4043;
-    width: 100%; 
+    width: 100%;
+    display:flex;
+    align-items:center;
 }
 
 .aboutMe {
- 
-    width: 46%;
-    height: 600 px;
-    float: left;
     background-color: #3C4043;
-    
     padding-left: 20px;
-    
+    flex: 1 1 0;
 }
 
-.hroImg {
-    width: 50%;
-    height: 600 px;
-    float: right;
-   
+.heroImg {
+   flex: 1 1 0;
 }
 
 .h1 {
@@ -88,10 +82,12 @@ p {
     font-size: 1rem;
     color: #3C4043 ;
 }
-.p {
+.intro-text {
     font-family: Open Sans;
     color: aliceblue;
-    font-size:1.5rem ;
+    font-size:1.5em ;
+    padding:2.5em 0;
+    line-height:1.5em;
 }
 
 
@@ -167,14 +163,16 @@ button {
 
 @media only screen and (max-width:600px) {
 
+    #content {
+        flex-direction:column;
+    }
+
     p {
         font-family: open Sans;
         font-size: 1rem;
         color: #3C4043 ;
     }
 
-  
-   
     .flexContainer {
         display: flex;
         flex-direction: column;
@@ -191,5 +189,4 @@ button {
         width: 90%;
 
     }
-    
 }
